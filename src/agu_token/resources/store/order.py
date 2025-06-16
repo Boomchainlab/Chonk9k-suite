@@ -32,7 +32,7 @@ class OrderResource(SyncAPIResource):
         This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/Boomchainlab/agu-token#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/Boomchainlab/Chonk9k-suite#accessing-raw-response-data-eg-headers
         """
         return OrderResourceWithRawResponse(self)
 
@@ -41,7 +41,7 @@ class OrderResource(SyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/Boomchainlab/agu-token#with_streaming_response
+        For more information, see https://www.github.com/Boomchainlab/Chonk9k-suite#with_streaming_response
         """
         return OrderResourceWithStreamingResponse(self)
 
@@ -169,7 +169,7 @@ class AsyncOrderResource(AsyncAPIResource):
         This property can be used as a prefix for any HTTP method call to return
         the raw response object instead of the parsed content.
 
-        For more information, see https://www.github.com/Boomchainlab/agu-token#accessing-raw-response-data-eg-headers
+        For more information, see https://www.github.com/Boomchainlab/Chonk9k-suite#accessing-raw-response-data-eg-headers
         """
         return AsyncOrderResourceWithRawResponse(self)
 
@@ -178,7 +178,7 @@ class AsyncOrderResource(AsyncAPIResource):
         """
         An alternative to `.with_raw_response` that doesn't eagerly read the response body.
 
-        For more information, see https://www.github.com/Boomchainlab/agu-token#with_streaming_response
+        For more information, see https://www.github.com/Boomchainlab/Chonk9k-suite#with_streaming_response
         """
         return AsyncOrderResourceWithStreamingResponse(self)
 
