@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2025-06-21)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/Boomchainlab/Chonk9k-suite/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Chores
+
+* **deps:** update actions/github-script action to v7 ([6c8ff16](https://github.com/Boomchainlab/Chonk9k-suite/commit/6c8ff16ca31b22fae42603b36e47edfb20d5dd81))
+* **deps:** update python docker tag to v3.13.5 ([835be77](https://github.com/Boomchainlab/Chonk9k-suite/commit/835be77f39564602a70e5ed3ec38d0009d77a057))
+
 ## 0.1.0-alpha.1 (2025-06-21)
 
 Full Changelog: [v0.0.1-alpha.0...v0.1.0-alpha.1](https://github.com/Boomchainlab/Chonk9k-suite/compare/v0.0.1-alpha.0...v0.1.0-alpha.1)
