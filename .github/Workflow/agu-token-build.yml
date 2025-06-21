@@ -1,0 +1,44 @@
+name: AGU Token Build & Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install Rust toolchain (stable)
+      uses: dtolnay/rust-toolchain@stable
+
+    - name: Install Python build tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install build twine maturin
+
+    - name: Build wheel and sdist
+      run: python -m build
+
+    - name: Test installation with pip
+      run: |
+        pip install --pre dist/*.whl
+        python -c "import agu_token; print('AGU Token imported successfully ✅')"
+
+    - name: Upload to PyPI (optional)
+      if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+      run: twine upload dist/*
