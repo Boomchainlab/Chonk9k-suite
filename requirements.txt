@@ -3,7 +3,7 @@ fastapi==0.110.1
 uvicorn[standard]==0.29.0
 
 # WSGI production server
-gunicorn==21.2.0
+gunicorn==23.0.0
 
 # Data validation & parsing
 pydantic==2.7.1
