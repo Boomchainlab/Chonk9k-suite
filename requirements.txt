@@ -6,7 +6,7 @@ uvicorn[standard]==0.29.0
 gunicorn==23.0.0
 
 # Data validation & parsing
-pydantic==2.7.1
+pydantic==2.11.7
 
 # PostgreSQL database support
 psycopg2-binary==2.9.10
