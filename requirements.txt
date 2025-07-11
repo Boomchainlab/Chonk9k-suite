@@ -1,5 +1,5 @@
 # FastAPI core
-fastapi==0.110.1
+fastapi==0.116.1
 uvicorn[standard]==0.29.0
 
 # WSGI production server
