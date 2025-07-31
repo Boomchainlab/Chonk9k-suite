@@ -29,4 +29,4 @@ requests==2.32.4
 sentry-sdk==2.0.1
 
 # Async utils
-aiofiles==23.2.1
+aiofiles==24.1.0
