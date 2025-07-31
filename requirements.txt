@@ -16,7 +16,7 @@ sqlalchemy==2.0.42
 redis==6.2.0
 
 # Background tasks, optional
-celery==5.4.0
+celery==5.5.3
 
 # Environment variable support
 python-dotenv==1.0.1
