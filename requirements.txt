@@ -10,7 +10,7 @@ pydantic==2.11.7
 
 # PostgreSQL database support
 psycopg2-binary==2.9.10
-sqlalchemy==2.0.42
+sqlalchemy==2.0.43
 
 # Redis support (for queueing or caching)
 redis==6.2.0
