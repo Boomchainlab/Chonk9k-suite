@@ -18,7 +18,7 @@ jobs:
     name: lint
     runs-on: ${{ github.repository == 'stainless-sdks/agu-token-python' && 'depot-ubuntu-24.04' || 'ubuntu-latest' }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install Rye
         run: |
@@ -43,7 +43,7 @@ jobs:
       id-token: write
     runs-on: depot-ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Get GitHub OIDC Token
         id: github-oidc
@@ -63,7 +63,7 @@ jobs:
     name: test
     runs-on: ${{ github.repository == 'stainless-sdks/agu-token-python' && 'depot-ubuntu-24.04' || 'ubuntu-latest' }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install Rye
         run: |
