@@ -13,7 +13,7 @@ psycopg2-binary==2.9.10
 sqlalchemy==2.0.43
 
 # Redis support (for queueing or caching)
-redis==6.2.0
+redis==6.4.0
 
 # Background tasks, optional
 celery==5.5.3
